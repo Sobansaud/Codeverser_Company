@@ -1,0 +1,24 @@
+# robots.txt for CodeVerser
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://codeverser.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+
+# Disallow admin/private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow all CSS, JS, and images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
