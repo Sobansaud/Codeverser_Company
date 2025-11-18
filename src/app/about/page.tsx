@@ -24,14 +24,14 @@ export const metadata: Metadata = {
 
 const leaders = [
 {
-  name: "",
-  role: "CTO & CO - Founder",
+  name: "Muhammad Soban Saud",
+  role: "CEO & Co-Founder",
   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
   bio: "Former VP of Engineering at a Fortune 500 tech company with 15+ years of experience building scalable systems."
 },
 {
   name: "Abdul Samay",
-  role: "",
+  role: "CTO & Co-Founder",
   image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
   bio: "AI researcher and architect with PhD in Machine Learning from MIT. Previously led AI initiatives at leading tech firms."
 },
