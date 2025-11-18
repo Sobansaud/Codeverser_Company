@@ -26,13 +26,13 @@ const leaders = [
 {
   name: "Muhammad Soban Saud",
   role: "CEO & Co-Founder",
-  image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+  image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
   bio: "Former VP of Engineering at a Fortune 500 tech company with 15+ years of experience building scalable systems."
 },
 {
   name: "Abdul Samay",
   role: "CTO & Co-Founder",
-  image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+  image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
   bio: "AI researcher and architect with PhD in Machine Learning from MIT. Previously led AI initiatives at leading tech firms."
 },
 {
