@@ -31,7 +31,7 @@ const leaders = [
 },
 {
   name: "Abdul Samay",
-  role: "CTO & Co-Founder",
+  role: "",
   image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
   bio: "AI researcher and architect with PhD in Machine Learning from MIT. Previously led AI initiatives at leading tech firms."
 },
@@ -226,7 +226,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <h3 className="text-lg font-semibold sm:text-xl !whitespace-pre-line !whitespace-pre-line">{leader.name}</h3>
-                <p className="mt-1 text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent sm:text-base">{leader.role}</p>
+                <p className="mt-1 text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent sm:text-base !whitespace-pre-line !whitespace-pre-line">{leader.role}</p>
                 <p className="mt-2 text-xs text-muted-foreground sm:mt-3 sm:text-sm">{leader.bio}</p>
               </div>
             )}
