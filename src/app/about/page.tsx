@@ -32,17 +32,17 @@ const leaders = [
 {
   name: "Abdul Samay",
   role: "CTO & Co-Founder",
-  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+  image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
   bio: "AI researcher and architect with PhD in Machine Learning from MIT. Previously led AI initiatives at leading tech firms."
 },
 {
-  name: "Marcus Rodriguez",
+  name: "Abdullah Rustam",
   role: "Head of Product",
   image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
   bio: "Product strategist with a track record of launching successful SaaS products used by millions worldwide."
 },
 {
-  name: "Emma Williams",
+  name: "Marium Rauf Soomro",
   role: "Head of Design",
   image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
   bio: "Award-winning UX designer passionate about creating intuitive, beautiful interfaces that users love."
