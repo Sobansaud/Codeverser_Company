@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, MapPin, Phone, CheckCircle, AlertCircle, Loader2, Clock } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -125,10 +125,10 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
             {/* Contact Info Cards */}
             <div className="space-y-6">
-              <Card>
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Mail className="h-6 w-6 text-primary" />
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                    <Mail className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Email Us</CardTitle>
                   <CardDescription>
@@ -145,30 +145,30 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Phone className="h-6 w-6 text-primary" />
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                    <Phone className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Call Us</CardTitle>
                   <CardDescription>
-                    Mon-Fri from 9am to 6pm PST
+                    Available 24/7 for your convenience
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+923299274846"
                     className="text-sm font-medium text-primary hover:underline"
                   >
-                    +1 (555) 123-4567
+                    +92 329 9274846
                   </a>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <MapPin className="h-6 w-6 text-primary" />
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                    <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Visit Us</CardTitle>
                   <CardDescription>
@@ -177,19 +177,39 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <address className="text-sm not-italic text-muted-foreground">
-                    123 Tech Street<br />
-                    San Francisco, CA 94105<br />
-                    United States
+                    Karachi, Pakistan
                   </address>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 bg-gradient-to-br from-blue-500/10 to-purple-600/10 border-primary/30">
+                <CardHeader>
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                    <Clock className="h-6 w-6 text-white" />
+                  </div>
+                  <CardTitle>Working Hours</CardTitle>
+                  <CardDescription>
+                    We're always here for you
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm font-semibold text-primary">
+                    Open 24/7 - Every Day
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Round-the-clock support for all your needs
+                  </p>
                 </CardContent>
               </Card>
             </div>
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <Card className="border-2">
+              <Card className="border-2 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Send us a Message</CardTitle>
+                  <CardTitle className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Send us a Message
+                  </CardTitle>
                   <CardDescription>
                     Fill out the form below and we'll get back to you within 24 hours
                   </CardDescription>
@@ -286,7 +306,7 @@ export default function ContactPage() {
                       type="submit"
                       size="lg"
                       disabled={status === "loading"}
-                      className="w-full"
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
                     >
                       {status === "loading" ? (
                         <>
@@ -305,20 +325,26 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section (Optional) */}
-      <section className="bg-muted/30 py-24 sm:py-32">
+      {/* Map Section */}
+      <section className="bg-gradient-to-b from-muted/30 to-background py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Visit Our Office
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Visit Our Office
+              </span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We're located in the heart of San Francisco's tech district
+              We're located in Karachi, Pakistan - Ready to serve you 24/7
             </p>
           </div>
-          <div className="mt-12 overflow-hidden rounded-2xl border">
-            <div className="aspect-[21/9] bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Map integration placeholder</p>
+          <div className="mt-12 overflow-hidden rounded-2xl border-2 shadow-xl">
+            <div className="aspect-[21/9] bg-gradient-to-br from-blue-500/10 to-purple-600/10 flex items-center justify-center">
+              <div className="text-center">
+                <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
+                <p className="text-lg font-semibold text-foreground">Karachi, Pakistan</p>
+                <p className="text-sm text-muted-foreground mt-2">Available 24/7 for your convenience</p>
+              </div>
             </div>
           </div>
         </div>
