@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 const leaders = [
 {
   name: "Muhammad Soban Saud",
-  role: "CEO & Co-Founder",
-  image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-  bio: "Former VP of Engineering at a Fortune 500 tech company with 15+ years of experience building scalable systems."
+  role: "CEO & Founder",
+  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/professional-1763548253747.png?width=8000&height=8000&resize=contain",
+  bio: "18-year-old full-stack visionary turning bold ideas into pixel-perfect reality. From AI-powered tools to startup-grade SaaS platforms, he crafts intelligent solutions that look stunning and work smarter—blending cutting-edge tech with seamless UI/UX to solve real-world problems beautifully."
 },
 {
   name: "Abdul Samay",
