@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Facebook, Linkedin, Twitter, Mail, MapPin, Phone, Instagram, Youtube } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 const navigation = {
   company: [
@@ -50,11 +52,11 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <Link href="/" className="text-2xl font-bold bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               CodeVerser
             </Link>
             <p className="text-sm leading-6 text-muted-foreground max-w-xs">
-              Empowering businesses with cutting-edge AI solutions, custom SaaS development, and innovative software services.
+              Delivering bespoke software solutions from Karachi, combining technical excellence with personalized service for businesses worldwide.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -108,7 +110,7 @@ export function Footer() {
               <h3 className="text-sm font-semibold leading-6">Contact Info</h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                  <Mail className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                   <a
                     href="mailto:codeverse627@gmail.com"
                     className="text-sm leading-6 text-muted-foreground hover:text-primary transition-colors"
@@ -117,7 +119,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                  <Phone className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                   <a
                     href="tel:+923299274846"
                     className="text-sm leading-6 text-muted-foreground hover:text-primary transition-colors"
@@ -126,7 +128,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                   <span className="text-sm leading-6 text-muted-foreground">
                     Karachi, Pakistan
                   </span>
@@ -141,6 +143,16 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-16 border-t pt-8 sm:mt-20 lg:mt-24">
+          <div className="mx-auto max-w-md text-center">
+            <h3 className="text-lg font-semibold">Stay Updated</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Subscribe to our newsletter for the latest updates and insights.</p>
+            <div className="mt-4 flex gap-2">
+              <Input type="email" placeholder="Enter your email" className="flex-1" />
+              <Button>Subscribe</Button>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 border-t pt-8">
           <p className="text-xs leading-5 text-muted-foreground text-center">
             &copy; {new Date().getFullYear()} CodeVerser. All rights reserved.
           </p>

@@ -22,10 +22,10 @@ export function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/codeverser-1763125275761.jpg"
               alt="CodeVerser Logo"
@@ -34,7 +34,7 @@ export function Navbar() {
               className="rounded-lg"
               priority
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               CodeVerser
             </span>
           </Link>
@@ -61,13 +61,14 @@ export function Navbar() {
               key={item.name}
               href={item.href}
               className={cn(
-                "text-sm font-semibold leading-6 transition-colors hover:text-primary",
+                "group relative text-sm font-semibold leading-6 transition-all duration-300 hover:text-primary",
                 pathname === item.href
                   ? "text-primary"
                   : "text-muted-foreground"
               )}
             >
               {item.name}
+              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
@@ -88,10 +89,10 @@ export function Navbar() {
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
-                  "block rounded-md px-3 py-2 text-base font-medium transition-colors",
+                  "block rounded-md px-3 py-2 text-base font-medium transition-all duration-300",
                   pathname === item.href
                     ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:bg-muted"
+                    : "text-muted-foreground hover:bg-muted hover:scale-105"
                 )}
               >
                 {item.name}

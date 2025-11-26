@@ -1,1 +1,14 @@
-import { MetadataRoute } from 'next'\n\nexport default function robots(): MetadataRoute.Robots {\n  return {\n    rules: [\n      {\n        userAgent: '*',\n        allow: '/',\n        disallow: ['/api/', '/admin/'],\n      },\n    ],\n    sitemap: 'https://codeverser.com/sitemap.xml',\n  }\n}\n
+import { MetadataRoute } from "next"
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
+    ],
+    sitemap: "https://codeverser.com/sitemap.xml",
+  }
+}

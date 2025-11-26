@@ -1,1 +1,51 @@
-import { MetadataRoute } from 'next'\n\nexport default function sitemap(): MetadataRoute.Sitemap {\n  const baseUrl = 'https://codeverser.com'\n  const currentDate = new Date().toISOString()\n\n  return [\n    {\n      url: baseUrl,\n      lastModified: currentDate,\n      changeFrequency: 'weekly',\n      priority: 1.0,\n    },\n    {\n      url: `${baseUrl}/about`,\n      lastModified: currentDate,\n      changeFrequency: 'monthly',\n      priority: 0.8,\n    },\n    {\n      url: `${baseUrl}/services`,\n      lastModified: currentDate,\n      changeFrequency: 'monthly',\n      priority: 0.9,\n    },\n    {\n      url: `${baseUrl}/portfolio`,\n      lastModified: currentDate,\n      changeFrequency: 'weekly',\n      priority: 0.9,\n    },\n    {\n      url: `${baseUrl}/contact`,\n      lastModified: currentDate,\n      changeFrequency: 'monthly',\n      priority: 0.8,\n    },\n    {\n      url: `${baseUrl}/privacy`,\n      lastModified: currentDate,\n      changeFrequency: 'yearly',\n      priority: 0.3,\n    },\n    {\n      url: `${baseUrl}/terms`,\n      lastModified: currentDate,\n      changeFrequency: 'yearly',\n      priority: 0.3,\n    },\n  ]\n}\n
+import { MetadataRoute } from "next"
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://codeverser.com"
+  const currentDate = new Date().toISOString()
+
+  return [
+    {
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/portfolio`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: currentDate,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: currentDate,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ]
+}

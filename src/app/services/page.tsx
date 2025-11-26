@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Cloud, Code, Cpu, Database, Smartphone, Zap, CheckCircle } from "lucide-react";
+import { ArrowRight, Cloud, Code, Cpu, Database, Smartphone, Zap, CheckCircle, Quote } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -113,11 +113,11 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-linear-to-b from-background to-muted/20 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Comprehensive Software Solutions
               </span>
               {" "}for Modern Businesses
@@ -125,6 +125,20 @@ export default function ServicesPage() {
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               From custom SaaS platforms to AI integration, we provide end-to-end software services that drive innovation and growth.
             </p>
+            <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary">200+</div>
+                <div className="text-sm text-muted-foreground">Projects Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary">98%</div>
+                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Support Available</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -169,7 +183,7 @@ export default function ServicesPage() {
                     <ul className="mt-4 space-y-3">
                       {service.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                           <span className="text-sm text-muted-foreground">{feature}</span>
                         </li>
                       ))}

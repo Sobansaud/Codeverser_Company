@@ -34,7 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <ThemeProvider defaultTheme="light" storageKey="codeverse-theme">
+        <ThemeProvider defaultTheme="dark" storageKey="codeverse-theme">
           <ErrorReporter />
           <Script
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"

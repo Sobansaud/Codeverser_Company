@@ -104,16 +104,16 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-linear-to-b from-background to-muted/20 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Get in Touch
+              <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Connect with CodeVerser
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Ready to transform your business with custom software? Reach out directly to our founder for a personalized consultation. We're here to turn your vision into reality.
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Email Us</CardTitle>
@@ -147,7 +147,7 @@ export default function ContactPage() {
 
               <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Call Us</CardTitle>
@@ -167,7 +167,7 @@ export default function ContactPage() {
 
               <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-cyan-600">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Visit Us</CardTitle>
@@ -182,9 +182,9 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 bg-gradient-to-br from-blue-500/10 to-purple-600/10 border-primary/30">
+              <Card className="border-2 bg-linear-to-br from-blue-500/10 to-purple-600/10 border-primary/30">
                 <CardHeader>
-                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                  <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle>Working Hours</CardTitle>
@@ -207,7 +207,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <Card className="border-2 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <CardTitle className="text-2xl bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                     Send us a Message
                   </CardTitle>
                   <CardDescription>
@@ -275,7 +275,7 @@ export default function ContactPage() {
                         role="alert"
                         aria-live="polite"
                       >
-                        <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+                        <AlertCircle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
                         <div className="flex-1">
                           <p className="text-sm font-medium text-destructive">
                             {errorMessage || "Something went wrong"}
@@ -290,7 +290,7 @@ export default function ContactPage() {
                         role="alert"
                         aria-live="polite"
                       >
-                        <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 shrink-0 mt-0.5" />
                         <div className="flex-1">
                           <p className="text-sm font-medium text-green-600 dark:text-green-400">
                             Message sent successfully!
@@ -306,7 +306,7 @@ export default function ContactPage() {
                       type="submit"
                       size="lg"
                       disabled={status === "loading"}
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                      className="w-full bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
                     >
                       {status === "loading" ? (
                         <>
@@ -326,11 +326,11 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="bg-gradient-to-b from-muted/30 to-background py-24 sm:py-32">
+      <section className="bg-linear-to-b from-muted/30 to-background py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                 Visit Our Office
               </span>
             </h2>
@@ -339,7 +339,7 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="mt-12 overflow-hidden rounded-2xl border-2 shadow-xl">
-            <div className="aspect-[21/9] bg-gradient-to-br from-blue-500/10 to-purple-600/10 flex items-center justify-center">
+            <div className="aspect-21/9 bg-linear-to-br from-blue-500/10 to-cyan-600/10 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
                 <p className="text-lg font-semibold text-foreground">Karachi, Pakistan</p>

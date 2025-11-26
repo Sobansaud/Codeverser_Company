@@ -83,8 +83,9 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-none space-y-2 text-muted-foreground mb-6">
             <li>Email: codeverse627@gmail.com</li>
-            <li>Phone: +1 (555) 123-4567</li>
-            <li>Address: 123 Tech Street, San Francisco, CA 94105</li>
+            <li>Phone: +92 329 9274846</li>
+            <li>Address: Karachi, Pakistan</li>
+            <li>Working Hours: Open 24/7 - Every Day</li>
           </ul>
         </div>
       </div>

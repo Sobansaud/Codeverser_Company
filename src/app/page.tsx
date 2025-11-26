@@ -6,12 +6,12 @@ import { ArrowRight, Award, CheckCircle, Users, Zap, Shield, TrendingUp } from "
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CodeVerser - AI-Powered SaaS & Software Solutions",
-  description: "Transform your business with cutting-edge AI solutions, custom SaaS development, and innovative software services. Expert team delivering scalable, secure solutions.",
-  keywords: "AI solutions, SaaS development, custom software, machine learning, cloud solutions, automation",
+  title: "CodeVerser - Custom Software Development & AI Solutions",
+  description: "We specialize in building robust, scalable software that adapts to your unique business needs. From AI integrations to full-stack web apps, our team delivers solutions that drive real results.",
+  keywords: "custom software development, AI solutions, SaaS platforms, full-stack development, Karachi software company",
   openGraph: {
-    title: "CodeVerser - AI-Powered SaaS & Software Solutions",
-    description: "Transform your business with cutting-edge AI solutions, custom SaaS development, and innovative software services.",
+    title: "CodeVerser - Custom Software Development & AI Solutions",
+    description: "We specialize in building robust, scalable software that adapts to your unique business needs. From AI integrations to full-stack web apps, our team delivers solutions that drive real results.",
     type: "website",
     url: "https://codeverser.com",
     images: [
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
         url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/verser-banner-1763125275802.jpg",
         width: 1200,
         height: 630,
-        alt: "CodeVerser - AI Solutions",
+        alt: "CodeVerser - Custom Software Solutions",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CodeVerser - AI-Powered SaaS & Software Solutions",
-    description: "Transform your business with cutting-edge AI solutions, custom SaaS development, and innovative software services.",
+    title: "CodeVerser - Custom Software Development & AI Solutions",
+    description: "We specialize in building robust, scalable software that adapts to your unique business needs. From AI integrations to full-stack web apps, our team delivers solutions that drive real results.",
   },
 };
 
@@ -62,21 +62,21 @@ const stats = [
 
 const testimonials = [
   {
-    content: "CodeVerser transformed our business with their AI solutions. The ROI was incredible, and the team was professional throughout.",
-    author: "Sarah Johnson",
-    role: "CEO, TechCorp",
+    content: "CodeVerser built our e-commerce platform from the ground up. Their attention to detail and technical expertise helped us scale quickly.",
+    author: "Ayesha R.",
+    role: "Founder, Retail Business",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
   },
   {
-    content: "Their custom SaaS platform exceeded our expectations. Fast delivery, excellent communication, and ongoing support.",
-    author: "Michael Chen",
-    role: "CTO, InnovateLabs",
+    content: "Working with CodeVerser was seamless. They integrated AI features into our existing system, improving efficiency by 40%.",
+    author: "Faisal M.",
+    role: "IT Director, Manufacturing",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },
   {
-    content: "Best development partner we've worked with. They truly understand business needs and deliver solutions that work.",
-    author: "Emily Rodriguez",
-    role: "Founder, StartupHub",
+    content: "Their team delivered a mobile app that exceeded our expectations. Professional, reliable, and great communication throughout.",
+    author: "Zara K.",
+    role: "Product Manager, Tech Startup",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
   },
 ];
@@ -109,7 +109,7 @@ export default function Home() {
               addressCountry: "PK",
             },
             email: "codeverse627@gmail.com",
-            description: "AI-Powered SaaS & Software Solutions Provider",
+            description: "Custom Software Development & AI Solutions Provider",
             priceRange: "$$",
             openingHoursSpecification: {
               "@type": "OpeningHoursSpecification",
@@ -133,7 +133,7 @@ export default function Home() {
             priority
           />
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+          <div className="absolute inset-0 bg-linear-to-b from-background/80 via-background/70 to-background" />
         </div>
 
         {/* Hero Content Overlaid */}
@@ -142,20 +142,20 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center">
               <div className="mb-8 inline-flex items-center rounded-full border-2 border-primary/30 bg-background/80 backdrop-blur-sm px-4 py-2 text-sm leading-6 animate-fade-in">
                 <Zap className="mr-2 h-5 w-5 text-yellow-500" />
-                <span className="font-semibold text-primary">AI-Powered Solutions Available 24/7</span>
+                <span className="font-semibold text-primary">CodeVerser: Crafting Digital Solutions from Karachi</span>
               </div>
               <h1 className="text-5xl font-bold tracking-tight sm:text-7xl animate-fade-in-up mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  Transform Your Business
+                <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                  Where Code Meets
                 </span>
                 <br />
-                <span className="text-foreground">with Intelligent Software</span>
+                <span className="text-foreground">Business Reality</span>
               </h1>
               <p className="mt-6 text-xl leading-8 text-muted-foreground animate-fade-in-up animation-delay-200">
-                We build cutting-edge SaaS platforms, AI-powered applications, and custom software solutions that drive growth and innovation for businesses worldwide.
+                We specialize in building robust, scalable software that adapts to your unique business needs. From AI integrations to full-stack web apps, our team delivers solutions that drive real results, not just features.
               </p>
               <div className="mt-10 flex items-center justify-center gap-4 animate-fade-in-up animation-delay-400">
-                <Button size="lg" asChild className="group text-lg px-8 py-6 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                <Button size="lg" asChild className="group text-lg px-8 py-6 bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700">
                   <Link href="/contact">
                     Get Started
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-muted/30">
+      <section className="py-16 bg-linear-to-b from-background to-muted/30">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {stats.map((stat, index) => (
@@ -180,7 +180,7 @@ export default function Home() {
                 className="text-center animate-fade-in-up p-6 rounded-lg bg-card border shadow-sm hover:shadow-md transition-shadow"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{stat.value}</div>
+                <div className="text-4xl font-bold bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">{stat.value}</div>
                 <div className="mt-2 text-sm text-muted-foreground font-medium">{stat.label}</div>
               </div>
             ))}
@@ -188,11 +188,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Badges */}
+      {/* Our Standards */}
       <section className="border-y bg-muted/30 py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold">Our Standards</h3>
+          </div>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            {trustBadges.map((badge) => (
+            {[
+              { name: "Quality Assurance", icon: CheckCircle },
+              { name: "24/7 Support", icon: Users },
+              { name: "Agile Development", icon: TrendingUp },
+              { name: "Data Security", icon: Shield },
+            ].map((badge) => (
               <div key={badge.name} className="flex items-center justify-center gap-3">
                 <badge.icon className="h-6 w-6 text-primary" />
                 <span className="text-sm font-semibold">{badge.name}</span>
@@ -222,7 +230,7 @@ export default function Home() {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardHeader>
-                    <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
+                    <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-cyan-600">
                       <feature.icon className="h-7 w-7 text-white" />
                     </div>
                     <CardTitle className="text-xl">{feature.name}</CardTitle>
@@ -236,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="bg-gradient-to-b from-muted/30 to-background py-24 sm:py-32">
+      <section className="bg-linear-to-b from-muted/30 to-background py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Services</h2>
@@ -332,7 +340,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 py-24 sm:py-32">
+      <section className="bg-linear-to-r from-blue-600 to-cyan-600 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
